@@ -108,7 +108,7 @@ housing-trends-web
 
 | Name               | Role                                                   |
 | ------------------ | ------------------------------------------------------ |
-| **Deep Raj**       | Lead Data Intelligence Engineer & Full-Stack Developer |
+| **Deep Raj**       | Project Architect & Full-Stack Developer |
 | **Badal**          | Data Acquisition Specialist                            |
 | **Tanmay Shekhar** | Visualization Engineer                                 |
 | **Himanshu Rawat** | Data Processing Analyst                                |
@@ -187,4 +187,4 @@ This project is created for **educational and analytical purposes** and demonstr
 
 ---
 
-⭐ If you find this project interesting, consider giving it a star!
+⭐ If you find this project interesting, consider giving it a star!!

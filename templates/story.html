@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Housing Story</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+
+<nav id="mainNav">
+<div class="logo">
+<span class="logo-icon">🏠</span> Housing Market Trends
+</div>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/dashboard">Dashboard</a></li>
+<li><a href="/story">Story</a></li>
+</ul>
+</nav>
+
+<!-- CURTAIN REVEAL -->
+<div class="curtain-wrapper">
+<div class="curtain curtain-left"></div>
+<div class="curtain curtain-right"></div>
+</div>
+
+<!-- STORY HERO -->
+<section class="story-hero">
+<h1 class="story-hero-title">Housing Market <span class="hero-accent">Story</span></h1>
+<p class="story-hero-sub">A complete visual journey exploring housing price patterns, property features, and market trends through interactive storytelling.</p>
+</section>
+
+<!-- STORY CONTENT -->
+<section class="story-content">
+
+<div class="story-glass-container">
+
+<div class='tableauPlaceholder' id='vizStory' style='position: relative'>
+
+<noscript>
+<a href='#'>
+<img alt='Housing Story'
+src='https://public.tableau.com/static/images/Bo/Book1_17728619571510/Story1/1.png'
+style='border:none' />
+</a>
+</noscript>
+
+<object class='tableauViz' style='display:none;'>
+
+<param name='host_url' value='https://public.tableau.com/' />
+<param name='embed_code_version' value='3' />
+<param name='name' value='Book1_17728619571510/Story1' />
+<param name='tabs' value='no' />
+<param name='toolbar' value='yes' />
+
+</object>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+<p>&copy; 2026 <span class="footer-accent">Housing Market Trends</span> | Built with Flask + Tableau</p>
+</footer>
+
+<script type='text/javascript'>
+
+var divElement = document.getElementById('vizStory');
+var vizElement = divElement.getElementsByTagName('object')[0];
+
+vizElement.style.width='100%';
+vizElement.style.height='850px';
+
+var scriptElement = document.createElement('script');
+scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+
+vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+</script>
+
+<!-- SCROLL NAV + CURTAIN -->
+<script>
+window.addEventListener('scroll', function(){
+var nav = document.getElementById('mainNav');
+if(window.scrollY > 60){
+nav.classList.add('nav-scrolled');
+} else {
+nav.classList.remove('nav-scrolled');
+}
+});
+
+window.addEventListener('load', function(){
+setTimeout(function(){
+document.querySelector('.curtain-wrapper').classList.add('curtain-open');
+}, 300);
+});
+</script>
+
+</body>
+</html>

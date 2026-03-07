@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About - Housing Trends</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+
+    <nav id="mainNav">
+        <div class="logo">
+            <span class="logo-icon">🏠</span> Housing Market Trends
+        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/story">Story</a></li>
+        </ul>
+    </nav>
+
+    <!-- ABOUT HERO -->
+    <section class="page-hero">
+        <h1 class="page-hero-title">About This <span class="hero-accent">Project</span></h1>
+        <p class="page-hero-sub">An interactive analysis of housing sale prices and property features using Tableau
+            dashboards.</p>
+    </section>
+
+    <!-- ABOUT CONTENT -->
+    <section class="about-dark-section">
+
+        <div class="about-dark-card">
+
+            <div class="about-dark-image">
+                <img src="{{ url_for('static', filename='house_stocks.jpg') }}"
+                    alt="Housing Market">
+            </div>
+
+            <div class="about-dark-content">
+
+                <h2>Visualizing Housing Market <span class="hero-accent">Trends</span></h2>
+
+                <p class="about-dark-subtitle">
+                    Comprehensive data analysis covering property pricing, renovation impact, and market patterns.
+                </p>
+
+                <ul class="about-dark-points">
+                    <li>Understanding key factors influencing housing prices.</li>
+                    <li>Analyzing housing datasets to uncover patterns in the real estate market.</li>
+                    <li>Exploring relationships between property attributes like renovation status, bedrooms and
+                        bathrooms.</li>
+                    <li>Using Tableau dashboards to visualize insights and trends in housing data.</li>
+                </ul>
+
+                <div class="about-dark-insights">
+                    <h3>Key Insights</h3>
+                    <ul>
+                        <li>Cities with fastest price growth</li>
+                        <li>Impact of location on property value</li>
+                        <li>Market trends across years</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>&copy; 2026 <span class="footer-accent">Housing Market Trends</span> | Built with Flask + Tableau</p>
+    </footer>
+
+    <!-- SCROLL NAV -->
+    <script>
+        window.addEventListener('scroll', function () {
+            var nav = document.getElementById('mainNav');
+            if (window.scrollY > 60) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

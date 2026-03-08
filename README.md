@@ -108,10 +108,10 @@ housing-trends-web
 
 | Name               | Role                                                   |
 | ------------------ | ------------------------------------------------------ |
-| **Deep Raj**       | Project Architect & Full-Stack Developer |
-| **Badal**          | Data Acquisition Specialist                            |
-| **Tanmay Shekhar** | Visualization Engineer                                 |
-| **Himanshu Rawat** | Data Processing Analyst                                |
+| **Prakhar**       | Project Architect & Full-Stack Developer |
+| **Prabal Pratap**          | Data Acquisition Specialist                            |
+| **nitesh chaudhary** | Visualization Engineer                                 |
+| **revant sinha** | Data Processing Analyst                                |
 
 ---
 
